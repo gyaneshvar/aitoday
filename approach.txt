@@ -1,0 +1,116 @@
+ai-today.in Website Plan (Final Review)
+
+1. Deployment & Domain
+     - Initial deployment: GitHub Pages (free static hosting).
+     - Steps:
+         1. Create a public GitHub repository (e.g., ai-today).
+         2. Add website files (HTML/CSS/JS) or a simple static generator later.
+         3. Enable GitHub Pages in repo Settings.
+         4. Site URL: https://<username>.github.io/ai-today
+     - Later: Buy ai-today.in on GoDaddy and connect it to GitHub Pages (custom domain + DNS).
+
+2. Website Tabs
+     - News
+     - Power Sites
+     - Power Tools
+
+3. Content Storage (Repo Data Format)
+     - Keep content in JSON so it’s easy to update and render with simple JS.
+     - Date format:
+         - Folder: YYYYMMDD (example: 20260112)
+         - Field: YYYY-MM-DD (example: 2026-01-12)
+
+4. News
+     - Daily folder:
+         - Path: /news/YYYYMMDD/
+         - File: /news/YYYYMMDD/news.json
+     - Daily file structure (array of items):
+         [
+             {
+                 "created": "YYYY-MM-DD",
+                 "heading": "...",
+                 "content": "...",
+                 "image_url": "...",
+                 "source_url": "..."
+             }
+         ]
+     - Editorial rules:
+         - Max 100 words per news item
+         - Simple Indian English
+         - Must include: heading + content + source_url (image_url optional)
+
+     - “Last 7 days” index file:
+         - File: /news/latest7days.json
+         - Purpose:
+             - Show a quick feed on the site
+             - Use it to avoid posting duplicate news
+         - Suggested structure (short summary only):
+             [
+                 {
+                     "created": "YYYY-MM-DD",
+                     "heading": "...",
+                     "summary": "(max 2 lines)",
+                     "source_url": "..."
+                 }
+             ]
+         - Duplicate check rule (simple and practical):
+             - Treat a news item as duplicate if source_url already exists in latest7days.json
+             - If source_url is missing, compare heading (case-insensitive) for near match
+
+5. Power Sites
+     - File: /power-sites.json
+     - Each entry:
+         {
+             "name": "...",
+             "url": "...",
+             "description": "(under 100 words; free to use)"
+         }
+     - Rules:
+         - Only free-to-use websites
+         - Description under 100 words
+
+6. Power Tools
+     - File: /power-tools.json
+     - Each entry:
+         {
+             "name": "...",
+             "url": "...",
+             "description": "(under 100 words; free/open-source tool)"
+         }
+     - Rules:
+         - Only free + open-source tools
+         - Description under 100 words
+
+7. Daily News Prompt (AI Workflow)
+     - Goal: Every day you say “Hi”, the model starts the news creation flow.
+     - Flow the model should follow:
+         1. Ask for today’s date (or assume today).
+         2. Search the internet for latest AI/tech news relevant to Indian audience.
+         3. Produce 5–10 candidate items with source URLs.
+         4. Check duplicates against /news/latest7days.json (by source_url first).
+         5. For non-duplicates, write:
+                - heading
+                - content (max 100 words, simple Indian English)
+                - image_url (only if confidently available)
+                - source_url
+         6. Output two JSON blocks:
+                - /news/YYYYMMDD/news.json (full items)
+                - /news/latest7days.json (append short summaries)
+         7. Ask you for approval before finalizing.
+
+     - Copy/paste daily prompt:
+         Hi. Today is <YYYY-MM-DD>. Please search the internet for latest AI + tech news relevant to India.
+         Requirements:
+         - Create 5–10 news items.
+         - Each item: heading + content (<= 100 words, simple Indian English) + source_url + optional image_url.
+         - Check duplicates using /news/latest7days.json (duplicate if source_url already exists).
+         Output:
+         - JSON for /news/<YYYYMMDD>/news.json (array of full items)
+         - JSON for /news/latest7days.json (append array items: created, heading, summary (max 2 lines), source_url)
+         Then ask me: “Approve? (yes/no)” before final.
+
+8. Next Steps
+     - Create repo and minimal folders: /news, plus the two JSON files for Power sections.
+     - Add one sample day under /news/YYYYMMDD/.
+     - Deploy on GitHub Pages and verify pages load the JSON correctly.
+
