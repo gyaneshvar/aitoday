@@ -42,10 +42,6 @@ function App() {
         {activeTab === 'power-sites' && <PowerSites />}
         {activeTab === 'power-tools' && <PowerTools />}
       </main>
-
-      <footer className="footer">
-        <p>Updated daily • Built with React + Vite</p>
-      </footer>
     </div>
   )
 }

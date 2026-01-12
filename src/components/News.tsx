@@ -16,7 +16,7 @@ function News() {
 
   useEffect(() => {
     const today = new Date().toISOString().split('T')[0]
-    fetch(`/news/${today}.json`)
+    fetch(`${import.meta.env.BASE_URL}news/${today}.json`)
       .then(res => {
         if (!res.ok) throw new Error('News not available for today')
         return res.json()

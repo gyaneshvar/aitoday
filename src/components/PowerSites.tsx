@@ -14,7 +14,7 @@ function PowerSites() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/power-sites.json')
+    fetch(`${import.meta.env.BASE_URL}power-sites.json`)
       .then(res => res.json())
       .then(data => {
         setSites(data)

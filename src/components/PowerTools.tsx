@@ -15,7 +15,7 @@ function PowerTools() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('/power-tools.json')
+    fetch(`${import.meta.env.BASE_URL}power-tools.json`)
       .then(res => res.json())
       .then(data => {
         setTools(data)
