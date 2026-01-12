@@ -43,6 +43,9 @@ function News() {
             <span className="category-badge">{item.category}</span>
             <h3>{item.title}</h3>
             <p>{item.description}</p>
+            <div className="news-meta">
+              <span className="published-date">Published On: {item.date}</span>
+            </div>
             <a href={item.url} target="_blank" rel="noopener noreferrer" className="read-more">
               Read more →
             </a>

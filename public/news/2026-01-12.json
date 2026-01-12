@@ -1,34 +1,58 @@
 [
   {
     "id": 1,
-    "title": "OpenAI Releases GPT-5 with Enhanced Reasoning",
-    "description": "New model shows significant improvements in complex problem-solving and multi-step reasoning tasks.",
-    "url": "https://openai.com/blog/gpt-5",
+    "title": "DeepSeek V4 Flagship Model Near Release",
+    "description": "Chinese startup DeepSeek is close to releasing its next flagship AI model V4, which reportedly outperforms Claude and ChatGPT in coding tasks. The model excels at handling extremely long coding prompts.",
+    "url": "https://www.theinformation.com/articles/deepseek-release-next-flagship-ai-model-strong-coding-ability",
     "category": "AI Models",
     "date": "2026-01-12"
   },
   {
     "id": 2,
-    "title": "Google Announces Gemini 2.0 Ultra",
-    "description": "Latest multimodal AI excels at understanding images, video, and audio alongside text.",
-    "url": "https://blog.google/technology/ai/gemini-2-ultra",
+    "title": "xAI Raises $20 Billion in Series E Funding",
+    "description": "Elon Musk's xAI secured $20 billion in funding, surpassing its $15 billion target. The company announced Grok 5 is in training and plans to launch innovative new consumer and enterprise products.",
+    "url": "https://x.ai/news/series-e",
     "category": "AI Models",
     "date": "2026-01-12"
   },
   {
     "id": 3,
-    "title": "New Open Source AI Framework Gains Traction",
-    "description": "Community-driven project aims to democratize access to large language models.",
-    "url": "https://github.com/example/ai-framework",
-    "category": "Open Source",
+    "title": "Grok Faces Global Backlash Over Deepfake Features",
+    "description": "Indonesia and Malaysia blocked Grok, and UK government threatens action after the AI chatbot created sexualized deepfakes of real people and children without consent. International regulators demand accountability.",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/855832/grok-undressing-children-csam-law-x-elon-musk",
+    "category": "AI Safety",
     "date": "2026-01-12"
   },
   {
     "id": 4,
-    "title": "AI Safety Research: New Guidelines Published",
-    "description": "International consortium releases comprehensive framework for responsible AI development.",
-    "url": "https://aisafety.org/guidelines",
-    "category": "AI Safety",
+    "title": "OpenAI Launches ChatGPT Health for Medical Records",
+    "description": "OpenAI unveiled ChatGPT Health, a HIPAA-compliant AI tool that connects to medical records. It creates discharge summaries, analyzes medical evidence, and assists healthcare providers. Already used by major hospitals.",
+    "url": "https://openai.com/index/openai-for-healthcare/",
+    "category": "Tools",
+    "date": "2026-01-12"
+  },
+  {
+    "id": 5,
+    "title": "Google Debuts AI-Powered Gmail Inbox",
+    "description": "Gmail launches AI Inbox feature that provides personalized overviews of emails and conversations. The new interface uses AI to help users manage and understand their inbox more efficiently.",
+    "url": "https://www.theverge.com/news/857883/google-gmail-ai-inbox-overviews",
+    "category": "Tools",
+    "date": "2026-01-12"
+  },
+  {
+    "id": 6,
+    "title": "Meta Signs Nuclear Power Deals for AI Data Centers",
+    "description": "Meta expands nuclear energy plans by signing agreements with three companies, including Bill Gates' startup, to power AI data centers. The deals will provide over 6 gigawatts of clean energy.",
+    "url": "https://www.theverge.com/news/859751/meta-nuclear-energy-plant-agreements-ai-data-centers",
+    "category": "Industry",
+    "date": "2026-01-12"
+  },
+  {
+    "id": 7,
+    "title": "Anthropic Reportedly Raising $10B at $350B Valuation",
+    "description": "OpenAI competitor Anthropic is reportedly raising $10 billion in new funding at a $350 billion valuation, continuing the massive investment wave in AI companies building large language models.",
+    "url": "https://techcrunch.com/2026/01/07/anthropic-reportedly-raising-10b-at-350b-valuation/",
+    "category": "Industry",
     "date": "2026-01-12"
   }
 ]
