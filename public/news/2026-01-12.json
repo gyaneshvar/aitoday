@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "OpenAI Releases GPT-5 with Enhanced Reasoning",
+    "description": "New model shows significant improvements in complex problem-solving and multi-step reasoning tasks.",
+    "url": "https://openai.com/blog/gpt-5",
+    "category": "AI Models",
+    "date": "2026-01-12"
+  },
+  {
+    "id": 2,
+    "title": "Google Announces Gemini 2.0 Ultra",
+    "description": "Latest multimodal AI excels at understanding images, video, and audio alongside text.",
+    "url": "https://blog.google/technology/ai/gemini-2-ultra",
+    "category": "AI Models",
+    "date": "2026-01-12"
+  },
+  {
+    "id": 3,
+    "title": "New Open Source AI Framework Gains Traction",
+    "description": "Community-driven project aims to democratize access to large language models.",
+    "url": "https://github.com/example/ai-framework",
+    "category": "Open Source",
+    "date": "2026-01-12"
+  },
+  {
+    "id": 4,
+    "title": "AI Safety Research: New Guidelines Published",
+    "description": "International consortium releases comprehensive framework for responsible AI development.",
+    "url": "https://aisafety.org/guidelines",
+    "category": "AI Safety",
+    "date": "2026-01-12"
+  }
+]

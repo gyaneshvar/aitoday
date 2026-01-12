@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Hugging Face",
+    "description": "Platform for sharing and discovering machine learning models and datasets",
+    "url": "https://huggingface.co",
+    "category": "ML Platform",
+    "features": ["Free models", "Datasets", "Spaces for demos"]
+  },
+  {
+    "id": 2,
+    "name": "Papers with Code",
+    "description": "Free resource with research papers and their implementation code",
+    "url": "https://paperswithcode.com",
+    "category": "Research",
+    "features": ["Latest papers", "Code implementations", "Benchmarks"]
+  },
+  {
+    "id": 3,
+    "name": "Kaggle",
+    "description": "Data science competition platform with free datasets and notebooks",
+    "url": "https://kaggle.com",
+    "category": "Data Science",
+    "features": ["Competitions", "Free datasets", "Jupyter notebooks"]
+  },
+  {
+    "id": 4,
+    "name": "Google Colab",
+    "description": "Free Jupyter notebook environment with GPU access",
+    "url": "https://colab.research.google.com",
+    "category": "Development",
+    "features": ["Free GPU/TPU", "Python notebooks", "Easy sharing"]
+  },
+  {
+    "id": 5,
+    "name": "AI Explained",
+    "description": "Educational resource for understanding AI concepts",
+    "url": "https://aiexplained.org",
+    "category": "Education",
+    "features": ["Free courses", "Interactive demos", "Clear explanations"]
+  }
+]
